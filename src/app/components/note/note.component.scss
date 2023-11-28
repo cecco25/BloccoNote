@@ -3,14 +3,15 @@
     flex-direction: column;
     justify-content: center;
     position: relative;
-    border: 2px solid #00C896;
+    border: 2px solid #00C6CF;
     padding: 15px;
     top: 20px;
     left: 20px;
     width: 300px;
+    height: 150px;
     gap: 10px;
     border-radius: 20px;
-    background-color: #3C3C3C;
+    background-color: var(--note-background);
     cursor: pointer;
 }
 

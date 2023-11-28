@@ -1,4 +1,4 @@
-import { Component, Input, OnChanges, OnDestroy, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, Output, OnChanges, OnDestroy, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-note', //Il selector identifica il tag html che dovete richiamare
