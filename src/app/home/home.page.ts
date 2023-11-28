@@ -9,4 +9,8 @@ export class HomePage {
 
   constructor() { }
 
+  handleNoteClick(noteID: any) {
+    // Gestisci l'evento di clic della nota qui
+    console.log('Nota cliccata nel componente padre! id: ', noteID);
+  }
 }

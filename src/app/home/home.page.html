@@ -13,7 +13,7 @@
   
     I valori che passate a title e content compariranno nella nota (vedi note.component.ts)
   -->
-    <app-note title="Il mio titolo!" content="Questa è la mia prima nota d'esempio!" />
+    <app-note title="Il mio titolo!" content="Questa è la mia prima nota d'esempio!" (noteClicked)="handleNoteClick($event)"/>
 
     <app-note title="Fratini The Best!" content="Questa è un'altra nota!" />
   </div>

@@ -1,20 +1,16 @@
-.note-container {
+.note {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    position: relative;
     border: 2px solid #00C6CF;
     padding: 15px;
-    top: 20px;
-    left: 20px;
-    width: 300px;
-    height: 150px;
     gap: 10px;
     border-radius: 20px;
     background-color: var(--note-background);
     cursor: pointer;
 }
 
-.note-container h3 {
+.note h3 {
+    margin: 0;
     font-weight: bold;
 }
