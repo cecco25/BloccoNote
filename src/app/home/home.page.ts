@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  numeroNote = [1, 2, 3, 4, 5]
+  numeroNote = [1, 2, 3, 4, 5];
 
   constructor() { }
 

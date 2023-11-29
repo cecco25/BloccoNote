@@ -26,7 +26,6 @@ export class NoteComponent implements OnInit {
 
   // Metodo chiamato quando l'utente fa clic sulla nota
   onNoteClick() {
-    // Emetti l'evento per notificare al componente genitore
-    this.noteClicked.emit(this.id);
+    this.noteClicked.emit(this.id); // Emetti l'evento per notificare al componente genitore
   }
 }
