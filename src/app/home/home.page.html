@@ -13,8 +13,16 @@
   
     I valori che passate a title e content compariranno nella nota (vedi note.component.ts)
   -->
-    <app-note title="Il mio titolo!" content="Questa è la mia prima nota d'esempio!" (noteClicked)="handleNoteClick($event)"/>
+    <app-note title="Il mio titolo!" content="Questa è la mia prima nota d'esempio!"
+      (noteClicked)="handleNoteClick($event)" />
 
-    <app-note title="Fratini The Best!" content="Questa è un'altra nota!" />
+    <!-- Questo è un esempio di for: numeroNote è un array nel .ts della home page,
+        quindi esso stampa il componente <app-note> in base a quanti elementi ha l'array 
+          Il valore track è utilizzato come chiave per associare gli elementi dell'array
+          alla vista nella pagina
+        -->
+    @for (note of numeroNote; track note) {
+    <app-note id="{{note}}" title="{{note}}) Fratini The Best!" content="Questa è un'altra nota!" />
+    }
   </div>
 </ion-content>

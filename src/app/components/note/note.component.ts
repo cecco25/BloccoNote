@@ -11,10 +11,13 @@ export class NoteComponent implements OnInit {
     le potete usare come attributi da inserire all'interno del tag html del componente.
     Il valore gli passate comparirà come titolo (title) o 
     descrizione (content) della nota  */
-  @Input() id = 1;
+  @Input() id = '';
   @Input() title = '';
   @Input() content = '';
 
+  /*Le variabili create dalla direttiva struttrale @Output
+  possono essere usate per intercettare eventi come, in questo caso, il click della nota,
+  istanziando questa classe EventEmitter*/
   @Output() noteClicked: EventEmitter<any> = new EventEmitter<any>();
 
   constructor() { }
