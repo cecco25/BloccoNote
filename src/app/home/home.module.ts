@@ -5,8 +5,9 @@ import { FormsModule } from '@angular/forms';
 import { HomePage } from './home.page';
 import { HomePageRoutingModule } from './home-routing.module';
 
-//Componenti Personalizzati
+//Componenti e Direttive Personalizzati
 import { NoteComponent } from '../components/note/note.component';
+import { NoteHighlightDirective } from '../directives/note-highlight.directive';
 
 @NgModule({
   imports: [
@@ -15,7 +16,7 @@ import { NoteComponent } from '../components/note/note.component';
     IonicModule,
     HomePageRoutingModule
   ],
-  //Aggiungete nelle dichiarazioni il nome del componente sopra importato
-  declarations: [HomePage, NoteComponent]
+  //Aggiungete nelle dichiarazioni il nome del componente o direttiva sopra importato
+  declarations: [HomePage, NoteComponent, NoteHighlightDirective]
 })
 export class HomePageModule { }
