@@ -11,6 +11,15 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  { // La route 'Note' viene creata automaticamente nell'array
+    path: 'note',
+    loadChildren: () => import('./note/note.module').then( m => m.NotePageModule)
+  },
+  { // Questa Route va creata manualmente aggiungendo ':id'
+    path: 'note/:id',
+    loadChildren: () => import('./note/note.module').then( m => m.NotePageModule)
+  },
+
 ];
 
 @NgModule({

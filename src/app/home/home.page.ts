@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -9,10 +10,12 @@ export class HomePage {
 
   numeroNote = [1, 2, 3, 4, 5];
 
-  constructor() { }
+  //importa la classe Router come parametro del costruttore
+  constructor(private readonly router: Router) { }
 
   handleNoteClick(noteID: any) {
     // Gestisci l'evento di clic della nota qui
     console.log('Nota cliccata nel componente padre! id: ', noteID);
+    this.router.navigate(['note', noteID])
   }
 }
