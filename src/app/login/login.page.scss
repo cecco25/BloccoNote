@@ -20,7 +20,7 @@
     border-radius: 20px;
 }
 
-form {
+.form {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -42,7 +42,7 @@ form {
     font-size: 14px;
 }
 
-form button {
+.form button {
     border-radius: 6px;
     height: 35px;
     cursor: pointer;
