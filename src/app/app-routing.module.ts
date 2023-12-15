@@ -19,6 +19,10 @@ const routes: Routes = [
     path: 'note/:id',
     loadChildren: () => import('./note/note.module').then( m => m.NotePageModule)
   },
+  {
+    path: 'login',
+    loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
+  },
 
 ];
 

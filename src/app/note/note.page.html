@@ -1,13 +1,28 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>note</ion-title>
+    <ion-title>{{this.noteId}}</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">note</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <div class="updateNoteCont">
+    <img src="../../assets/pencil.png" alt="pencil" width="40">
+  </div>
+
+  <div class="cont">
+    <div class="editCont">
+      <h2>Modifica Nota</h2>
+      <form method="POST">
+        <div class="valCont">
+          <label>Titolo</label>
+          <input type="text" name="title" placeholder="Inserisci Titolo">
+        </div>
+        <div class="valCont">
+          <label>Contenuto</label>
+          <textarea type="text" name="content" placeholder="Inserisci Contenuto"></textarea>
+        </div>
+        <button type="submit">Modifica</button>
+      </form>
+    </div>
+  </div>
 </ion-content>
